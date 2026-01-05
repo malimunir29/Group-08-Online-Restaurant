@@ -1,0 +1,66 @@
+/* Basic Design Variables */
+:root {
+  --bg-main: #121212;
+  --text-main: #f0f0f0;
+  --accent-primary: #fea116;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, "Segoe UI", sans-serif;
+}
+
+body {
+  padding-top: 60px;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* HEADER */
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.header .logo img {
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: var(--accent-primary);
+  border-bottom: 2px solid var(--accent-primary);
+  padding-bottom: 3px;
+}
+
+/* HERO */
+.contact-hero {
+  height: 70vh;
+  background: url("images/contact.jpg") center center no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+}
