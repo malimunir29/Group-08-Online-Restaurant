@@ -1,4 +1,4 @@
-/* ===== DESIGN SYSTEM (SAME AS ABOUT PAGE) ===== */
+
 :root {
   --bg-main: #121212;
   --bg-soft: #1a1a1a;
@@ -22,7 +22,7 @@ body {
   color: var(--text-main);
 }
 
-/* ===== HEADER (SAME AS ABOUT) ===== */
+
 .header {
   background: rgba(0, 0, 0, 0.8);
   padding: 10px 0;
@@ -64,16 +64,16 @@ body {
 }
 
 
-/* ===== CONTACT HERO IMAGE ONLY ===== */
+
 .contact-hero {
   height: 70vh;
-  margin-top: 60px; /* height of fixed header */
+  margin-top: 60px; 
   background: url("images/contact.jpg") center center no-repeat;
   background-size: cover;
 }
 
 
-/* ===== CONTACT SECTION ===== */
+
 .contact-section {
   padding: 90px 0;
 }
@@ -84,7 +84,7 @@ body {
   margin: auto;
 }
 
-/* ===== CONTACT CARDS ===== */
+
 .contact-info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -104,7 +104,7 @@ body {
   transform: tran
 }
 
-/* ===== CONTACT FORM ===== */
+
 .contact-form-section {
   margin-top: 90px;
   background: var(--bg-soft);
@@ -178,7 +178,7 @@ body {
   box-shadow: 0 15px 30px rgba(254,161,22,0.6);
 }
 
-/* ===== HELPLINE SECTION ===== */
+
 .helpline-section {
   padding: 90px 0;
   background-color: var(--bg-soft);
