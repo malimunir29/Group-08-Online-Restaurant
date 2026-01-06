@@ -1,10 +1,10 @@
 
-/* HEADER */
+
 
 .header {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
-    /* smaller top/bottom padding */
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -13,10 +13,9 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* LOGO IMAGE */
 .header .logo img {
     height: 50px;
-    /* adjust to fit your header */
+  
     width: auto;
     display: block;
 }
@@ -24,7 +23,7 @@
 body {
     margin: 0;
     padding-top: 60px;
-    /* height of header */
+    
     font-family: 'Segoe UI', sans-serif;
     color: #f0f0f0;
     background-color: #121212;
@@ -33,28 +32,28 @@ body {
 
 .header .container {
     display: flex;
-    justify-content: space-between; /* space between logo and nav */
-    align-items: center;            /* vertical alignment */
-    padding: 0 40px;               /* horizontal padding */
-    flex-wrap: nowrap;              /* prevent wrapping */
+    justify-content: space-between;
+    align-items: center;            
+    padding: 0 40px;             
+    flex-wrap: nowrap;             
 }
 
 
 .nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* spacing between links */
+    gap: 20px; 
 }
 
 .nav a {
     color: #f0f0f0;
     text-decoration: none;
     font-weight: 500;
-    white-space: nowrap; /* prevent link from wrapping */
+    white-space: nowrap; 
 }
-/* ACTIVE NAV LINK */
+
 .nav a.active {
-    color: #fea116;           /* ORANGE */
+    color: #fea116;       
     font-weight: 600;
     border-bottom: 2px solid #fea116;
     padding-bottom: 3px;
@@ -65,10 +64,10 @@ body {
     color: #fea116;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
     .header .container {
-        flex-direction: column; /* stack logo + menu on mobile */
+        flex-direction: column; 
         align-items: center;
         gap: 10px;
     }
@@ -79,7 +78,7 @@ body {
 }
 
 
-/* HERO SECTION */
+
 .hero {
     min-height: 90vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -91,42 +90,41 @@ body {
     padding: 20px;
 }
 
-/* CENTER CONTENT INSIDE HERO */
+
 .center-container {
     display: flex;
     align-items: center;
-    /* vertically centers text relative to image */
+  
     justify-content: center;
     gap: 30px;
-    /* space between text and image */
+  
     flex-wrap: wrap;
-    /* for small screens */
+
 }
 
-/* TEXT BLOCK */
+
 .text-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* vertically centers text inside the block */
+ 
     gap: 10px;
-    /* spacing between big text lines and tagline */
+ 
 }
 
-/* BIG TEXT */
 .text-block h1 {
     margin: 0px 0;
     font-size: 40px;
     color: #fff;
     line-height: 0.8;
 }
-/* POP-UP EFFECT FOR HERO TEXT */
+
 .text-block h1 {
     transition: transform 0.35s ease, color 0.35s ease;
     cursor: default;
 }
 
-/* POP-UP ON HOVER */
+
 .text-block h1:hover {
     transform: scale(1.12) translateY(-4px);
     color: #fea116;
@@ -139,23 +137,23 @@ body {
 
 .text-block .yellow {
     color: #fea116;
-    /* yellow accent */
+  
 }
 
-/* TAGLINE UNDER BIG TEXT */
+
 .text-block .tagline h2 {
     font-size: 20px;
-    /* smaller than big text */
+
     color: #f0f0f0;
     margin: 0;
 }
-/* POP-UP EFFECT FOR HERO TEXT */
+
 .text-block .tagline h2 {
     transition: transform 0.35s ease, color 0.35s ease;
     cursor: default;
 }
 
-/* POP-UP ON HOVER */
+
 .text-block .tagline h2:hover {
     transform: scale(1.12) translateY(-4px);
     color: #fea116;
@@ -165,58 +163,58 @@ body {
     color: #dcdcdc;
     margin: 0;
 }
-/* POP-UP EFFECT FOR HERO TEXT */
+
 .text-block .tagline p {
     transition: transform 0.35s ease, color 0.35s ease;
     cursor: default;
 }
 
-/* POP-UP ON HOVER */
+
 .text-block .tagline p:hover {
     transform: scale(1.12) translateY(-4px);
     color: #fea116;
 }
 
-/* IMAGE BLOCK */
+
 .image-block {
-    width: 300px;   /* container size */
-    height: 300px;  /* keep square to fit circle */
+    width: 300px;  
+    height: 300px;  
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* keeps it neat */
+    overflow: hidden; 
 }
 
-/* IMAGE ITSELF */
+
 .image-block img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* makes sure image fills the circle */
-    border-radius: 50%; /* circular image */
+    object-fit: cover;  
+    border-radius: 50%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
-/* ROTATE ONLY ON HOVER */
+
 .image-block img:hover {
     animation: rotateCircle 1.2s linear forwards;
 }
 
-/* ROTATION KEYFRAMES */
+
 @keyframes rotateCircle {
     0%   { transform: rotate(0deg); }
     50%  { transform: rotate(180deg); }
     100% { transform: rotate(360deg); }
 }
 
-/* RESPONSIVE FOR MOBILE */
+
 @media (max-width: 768px) {
     .image-block {
         width: 250px;
         height: 250px;
     }
     .image-block img:hover {
-        animation: none; /* no rotation on mobile */
+        animation: none; 
     }
 }
 
