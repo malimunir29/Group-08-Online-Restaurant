@@ -5,4 +5,4 @@ Powerpoint File Link: https://github.com/malimunir29/Group-08-Online-Restaurant/
 
 MS Word File Link: https://github.com/malimunir29/Group-08-Online-Restaurant/commit/59efc5c9a3d110778a989861f485dccbe3452011
 
-MS Excel File Link: https://github.com/malimunir29/Group-08-Online-Restaurant?tab=readme-ov-file
+MS Excel File Link: https://github.com/malimunir29/Group-08-Online-Restaurant/commit/8ea2de5eb6c01567d7173097497d562f3962b7d2
