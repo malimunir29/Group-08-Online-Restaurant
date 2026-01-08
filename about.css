@@ -1,10 +1,8 @@
-/* ===== DESIGN SYSTEM (Dark – Matches Your Website) ===== */
-/* HEADER */
 
 .header {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
-    /* smaller top/bottom padding */
+  
     position: fixed;
     top: 0;
     left: 0;
@@ -13,17 +11,17 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* LOGO IMAGE */
+
 .header .logo img {
     height: 50px;
-    /* adjust to fit your header */
+ 
     width: auto;
     display: block;
 }
 body {
     margin: 0;
     padding-top: 60px;
-    /* height of header */
+   
     font-family: 'Segoe UI', sans-serif;
     color: #f0f0f0;
     background-color: #121212;
@@ -32,26 +30,26 @@ body {
 
 .header .container {
     display: flex;
-    justify-content: space-between; /* space between logo and nav */
-    align-items: center;            /* vertical alignment */
-    padding: 0 40px;               /* horizontal padding */
-    flex-wrap: nowrap;              /* prevent wrapping */
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 0 40px;               
+    flex-wrap: nowrap;              
 }
 .nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* spacing between links */
+    gap: 20px; 
 }
 
 .nav a {
     color: #f0f0f0;
     text-decoration: none;
     font-weight: 500;
-    white-space: nowrap; /* prevent link from wrapping */
+    white-space: nowrap; 
 }
-/* ACTIVE NAV LINK */
+
 .nav a.active {
-    color: #fea116;           /* ORANGE */
+    color: #fea116;          
     font-weight: 600;
     border-bottom: 2px solid #fea116;
     padding-bottom: 3px;
@@ -62,10 +60,9 @@ body {
     color: #fea116;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
     .header .container {
-        flex-direction: column; /* stack logo + menu on mobile */
+        flex-direction: column; 
         align-items: center;
         gap: 10px;
     }
@@ -76,14 +73,14 @@ body {
 }
 
 :root {
-  --bg-main: #121212;               /* main dark background */
-  --bg-soft: #1a1a1a;               /* section contrast */
-  --card-bg: rgba(255,255,255,0.05);/* glass cards */
-  --text-main: #f0f0f0;             /* main text */
-  --text-muted: #b8b8b8;            /* muted text */
-  --accent-primary: #fea116;        /* ORANGE (brand color) */
-  --accent-secondary: #ffcc66;      /* soft gold */
-  --accent-warm: #fea116;           /* CTA / highlights */
+  --bg-main: #121212;               
+  --bg-soft: #1a1a1a;               
+  --card-bg: rgba(255,255,255,0.05);
+  --text-main: #f0f0f0;             
+  --text-muted: #b8b8b8;            
+   --accent-primary: #fea116;        
+  --accent-secondary: #ffcc66;      
+  --accent-warm: #fea116;           
 }
 
 
@@ -108,14 +105,14 @@ body {
   margin: auto;
 }
 
-/* ===== Hero ===== */
+
 .hero {
   height: 70vh;
-  margin-top: 60px; /* height of fixed header */
+  margin-top: 60px; 
   background: url("images/about.jpg") center center no-repeat;
   background-size: cover;
 }
-/* ===== About ===== */
+
 .about {
   padding: 90px 0;
   display: grid;
@@ -153,7 +150,7 @@ body {
   color: var(--text-muted);
 }
 
-/* ===== Values ===== */
+
 .values {
   padding: 90px 0;
   background-color: var(--bg-soft);
@@ -189,17 +186,17 @@ body {
   color: var(--text-muted);
 }
 
-/* ===== FOUNDERS ===== */
+
 .founders {
   padding: 90px 0;
-  background-color: #1a1a1a; /* slightly darker than values section */
+  background-color: #1a1a1a; 
   text-align: center;
 }
 
 .founders h2 {
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: #fea116; /* accent color */
+  color: #fea116; 
 }
 
 .founders-grid {
@@ -210,7 +207,7 @@ body {
 }
 
 .founder-card {
-  background: rgba(255, 255, 255, 0.05); /* glass effect */
+  background: rgba(255, 255, 255, 0.05); 
   border-radius: 18px;
   padding: 20px;
   text-align: center;
@@ -242,7 +239,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* ===== Social ===== */
+
 .social-section {
   padding: 80px 0;
   text-align: center;
@@ -280,7 +277,7 @@ body {
 }
 
 
-/* ===== Footer ===== */
+
 footer {
   padding: 35px 0;
   text-align: center;

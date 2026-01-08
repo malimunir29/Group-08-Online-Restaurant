@@ -1,10 +1,10 @@
 
-/* HEADER */
+
 
 .header {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
-    /* smaller top/bottom padding */
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -13,18 +13,16 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* LOGO IMAGE */
+
 .header .logo img {
     height: 50px;
-    /* adjust to fit your header */
+    
     width: auto;
     display: block;
 }
 
 body {
-    margin: 0;
-    padding-top: 60px;
-    /* height of header */
+    margin: 0; 
     font-family: 'Segoe UI', sans-serif;
     color: #f0f0f0;
     background-color: #121212;
@@ -33,28 +31,28 @@ body {
 
 .header .container {
     display: flex;
-    justify-content: space-between; /* space between logo and nav */
-    align-items: center;            /* vertical alignment */
-    padding: 0 40px;               /* horizontal padding */
-    flex-wrap: nowrap;              /* prevent wrapping */
+    justify-content: space-between;
+    align-items: center;            
+    padding: 0 40px;               
+    flex-wrap: nowrap;              
 }
 
 
 .nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* spacing between links */
+    gap: 20px; 
 }
 
 .nav a {
     color: #f0f0f0;
     text-decoration: none;
     font-weight: 500;
-    white-space: nowrap; /* prevent link from wrapping */
+    white-space: nowrap; 
 }
-/* ACTIVE NAV LINK */
+
 .nav a.active {
-    color: #fea116;           /* ORANGE */
+    color: #fea116;           
     font-weight: 600;
     border-bottom: 2px solid #fea116;
     padding-bottom: 3px;
@@ -65,10 +63,10 @@ body {
     color: #fea116;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
     .header .container {
-        flex-direction: column; /* stack logo + menu on mobile */
+        flex-direction: column; 
         align-items: center;
         gap: 10px;
     }
@@ -89,8 +87,8 @@ body {
 }
 
 .menu-item {
-  background-color: rgba(255, 255, 255, 0.05); /* soft frosted glass */
-  color: #f0f0f0; /* text white/light */
+  background-color: rgba(255, 255, 255, 0.05); 
+  color: #f0f0f0; 
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -100,7 +98,7 @@ body {
 
 .menu-item:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 15px 35px rgba(254, 161, 22, 0.4); /* warm orange glow */
+  box-shadow: 0 15px 35px rgba(254, 161, 22, 0.4); 
 }
 
 .item-image {
@@ -113,7 +111,7 @@ body {
 
 .menu-item:hover .item-image {
   transform: scale(1.05);
-  filter: brightness(1.2); /* brightens food image on hover */
+  filter: brightness(1.2); 
 }
 
 
@@ -122,17 +120,17 @@ body {
 }
 
 .item-name a {
-    color: #fea116 !important;   /* orange accent */
+    color: #fea116 !important;   
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .item-description {
-    color: #b8b8b8; /* muted gray */
+    color: #b8b8b8; 
 }
 
 .item-price a {
-    color: #ffcc66 !important;  /* soft gold */
+    color: #ffcc66 ;  
     font-weight: bold;
     text-decoration: none;
 }
@@ -144,13 +142,13 @@ body {
       margin: 60px 0 30px 0;
       color: #f0f0f0;
     }
-/* ===== HERO VIDEO ===== */
+
 .hero {
     position: relative;
     width: 100%;
-    height: 70vh; /* adjust hero height as needed */
+    height: 70vh; 
     overflow: hidden;
-    margin-top: 60px; /* space for fixed header */
+    margin-top: 60px; 
 }
 
 .hero-video {
@@ -159,8 +157,6 @@ body {
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
@@ -212,65 +208,53 @@ body {
       margin: 10px 0;
     }
 
-   /* Menu Item Cart Icon */
+   
 .menu-item {
-    position: relative; /* needed for absolute positioning of cart */
+    position: relative; 
     cursor: pointer;
 }
 
 .menu-item input[type="checkbox"] {
-    display: none; /* hide the checkbox itself */
+    display: none; 
 }
 
-/* Cart Icon */
+
 .menu-item .cart-icon {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
-    color: #fff; /* default color */
     transition: color 0.3s ease;
-    z-index: 2;
+   
 }
 .menu-item {
   position: relative;
   cursor: pointer;
 }
 
-/* Hide the actual checkbox */
+
 .menu-item input[type="checkbox"] {
     display: none;
 }
 
-/* Cart label and icon */
+
 .cart-label {
     position: absolute;
     top: 10px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 24px;
-    color: #fff; /* default color when not selected */
+    right: 10px;       
     transition: color 0.3s ease;
 }
-/* When checked, make cart yellow */
+
 .menu-item input[type="checkbox"]:checked + .cart-label .cart-icon {
-    color: #FFD700; /* yellow when selected */
+    color: #FFD700; 
 }
 .cart-label:hover .cart-icon {
     transform: scale(1.2);
 }
-.cart-icon {
-  font-size: 24px;
-  color: #fff; /* default color */
-  transition: color 0.3s ease;
-}
 
-.menu-item input[type="checkbox"]:checked + .cart-label .cart-icon {
-  color: #FFD700; /* yellow when selected */
-}
 
-    /* Done button */
+
+
+    
     .done-btn {
       display: block;
       width: 200px;
@@ -281,7 +265,7 @@ body {
       font-weight: bold;
       text-align: center;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 20px;
       transition: 0.3s;
     }
 
@@ -326,4 +310,5 @@ body {
     height: 180px;
   }
 }
+
 
