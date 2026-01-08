@@ -22,9 +22,7 @@
 }
 
 body {
-    margin: 0;
-    padding-top: 60px;
-    
+    margin: 0; 
     font-family: 'Segoe UI', sans-serif;
     color: #f0f0f0;
     background-color: #121212;
@@ -33,7 +31,7 @@ body {
 
 .header .container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;            
     padding: 0 40px;               
     flex-wrap: nowrap;              
@@ -132,7 +130,7 @@ body {
 }
 
 .item-price a {
-    color: #ffcc66 !important;  
+    color: #ffcc66 ;  
     font-weight: bold;
     text-decoration: none;
 }
@@ -159,8 +157,6 @@ body {
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
@@ -227,10 +223,8 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
-    color: #fff; 
     transition: color 0.3s ease;
-    z-index: 2;
+   
 }
 .menu-item {
   position: relative;
@@ -246,11 +240,7 @@ body {
 .cart-label {
     position: absolute;
     top: 10px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 24px;
-    color: #fff; 
+    right: 10px;       
     transition: color 0.3s ease;
 }
 
@@ -260,15 +250,9 @@ body {
 .cart-label:hover .cart-icon {
     transform: scale(1.2);
 }
-.cart-icon {
-  font-size: 24px;
-  color: #fff; 
-  transition: color 0.3s ease;
-}
 
-.menu-item input[type="checkbox"]:checked + .cart-label .cart-icon {
-  color: #FFD700; 
-}
+
+
 
     
     .done-btn {
@@ -281,7 +265,7 @@ body {
       font-weight: bold;
       text-align: center;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 20px;
       transition: 0.3s;
     }
 
@@ -326,4 +310,5 @@ body {
     height: 180px;
   }
 }
+
 
